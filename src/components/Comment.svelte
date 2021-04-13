@@ -19,10 +19,10 @@
     let diffMin = Math.round((diff/1000)/60)
 
     //return the correct string
-    if(diffDay >= 1 && DiffDay < 2){
-      return Math.ceil(DiffDay) + " day ago" 
+    if(diffDay >= 1 && diffDay < 2){
+      return Math.ceil(diffDay) + " day ago" 
     }else if(diffDay > 1){
-      return Math.ceil(DiffDay) + " days ago" 
+      return Math.ceil(diffDay) + " days ago" 
     }
     if(diffHour >= 1 && diffHour < 2){
       return Math.ceil(diffDay) + " hour ago" 
