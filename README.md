@@ -1,10 +1,13 @@
 
-# svelte comment section
+# Svelte comment section
 
 This is a simple comment section example built in svelte
 All comments are stored in local storage.
 
+[Demo](https://svelte-comment-section.vercel.app/)
+
 ![application screenshot](https://i.imgur.com/74BUghH.jpg)
+
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
