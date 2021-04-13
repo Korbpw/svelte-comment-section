@@ -14,25 +14,26 @@
     let diff = current.getTime() - date.getTime();
       
     // Calculate difference between the date and now
-    let diffDay = diff / (1000 * 3600 * 24);
-    let diffHour = Math.abs(diff) / 36e5;
-    let diffMin = Math.round((diff/1000)/60)
+    let diffDay = Math.ceil(diff / (1000 * 3600 * 24))
+    let diffHour = Math.ceil(Math.abs(diff) / 36e5)
+    let diffMin = Math.ceil(Math.round((diff/1000)/60))
+
 
     //return the correct string
     if(diffDay >= 1 && diffDay < 2){
-      return Math.ceil(diffDay) + " day ago" 
+      return diffDay + " day ago" 
     }else if(diffDay > 1){
-      return Math.ceil(diffDay) + " days ago" 
+      return diffDay + " days ago" 
     }
     if(diffHour >= 1 && diffHour < 2){
-      return Math.ceil(diffDay) + " hour ago" 
+      return diffDay + " hour ago" 
     }else if(diffHour > 1){
-      return Math.ceil(diffHour) + " hours ago" 
+      return diffHour + " hours ago" 
     }
     if(diffMin >= 1 && diffMin < 2){
-      return Math.round(diffMin) + " minute ago" 
+      return diffMin + " minute ago" 
     }else if(diffMin > 1){
-      return Math.round(diffMin) + " minutes ago" 
+      return diffMin + " minutes ago" 
     }
     return "just now" 
   }
